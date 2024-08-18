@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Moderustic:wght@300..800&display=swap');
+
+.sidebarContainer {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+  }
+  
+  
+  .filterTitle {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  
+  .checkboxContainer {
+    padding: 10px 0;
+  }
+  
+ 
+  .filterOptions {
+    padding-left: 20px;
+  }
+  
+  
+  .checkboxStyle {
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  
+
+  .labelStyle {
+    font-size: 14px;
+    color: #333;
+    padding-bottom: 2px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .sidebarContainer {
+      max-width: 100%;
+    }
+  
+    .filterTitle {
+      font-size: 12px;
+    }
+  
+    .labelStyle{
+      font-size: 10px;
+    }
+  }
+  
