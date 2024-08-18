@@ -6,7 +6,6 @@ const { default: Products } = require("./products");
 const { default: Sidebar } = require("./sidebar");
 
 const ManageProduct = ({ products }) => {
-  console.log(products, "sddddddddddddddddddddddddddddd");
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
   const toggleFilter = () => {
@@ -43,7 +42,6 @@ const ManageProduct = ({ products }) => {
 
   const handleFilterChange = (selectedFilters) => {
     let filtered = [...products];
-    console.log(selectedFilters, filtered, "filteredfilteredfilteredfiltered");
     const clothingFilters = selectedFilters["Clothing"] || [];
     const itemFilters = selectedFilters["Items"] || [];
 

@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import styles from "./navbar.module.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

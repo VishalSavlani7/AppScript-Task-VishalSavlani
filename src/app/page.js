@@ -6,11 +6,8 @@ import axios from "axios";
 import Head from "next/head";
 
 async function fetchProducts() {
-  console.log("dksfnkddddddddddddddddddddd");
   try {
     const response = await axios.get("https://fakestoreapi.com/products");
-    console.log(response, "responseresponseresponse");
-    // const response = await axios.get('https://api.escuelajs.co/api/v1/products');
     return response.data; // Axios wraps the response data in the 'data' property
   } catch (error) {
     console.error("Error fetching products:", error);
@@ -18,10 +15,7 @@ async function fetchProducts() {
   }
 }
 const Home = async () => {
-  debugger;
-  console.log("dddddddddddddddddddddddddddd");
   const products = await fetchProducts();
-  console.log(products, "productssssssssssss");
   return (
     <>
       <Head>
